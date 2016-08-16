@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/row_height_normal"
+        android:background="@color/alpha_black">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="@dimen/height_img_small_track"
+            android:layout_height="@dimen/height_img_small_track"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_default"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_close_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/btn_close"
+            android:background="@drawable/ic_skip_next_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp"/>
+
+        <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/btn_next"
+            android:minHeight="1sp"
+            android:minWidth="1sp"
+            android:src="@drawable/ic_play_arrow_white_36dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/btn_play"
+            android:layout_toRightOf="@+id/img_play"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_song"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="VEXKHOIS"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:ellipsize="marquee"
+                android:textColor="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textSize="@dimen/text_size_subhead"
+                android:textStyle="bold">
+
+                <requestFocus
+                    android:duplicateParentState="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="Unknown"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_body"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/Alessandro/Downloads/FullSource/SourceCode/AndroidStudio/AndroidMyMusicPlayer/androidMyMusicPlayer/src/main/res/layout/item_small_notification_music.xml -->

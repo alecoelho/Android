@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:fitsSystemWindows="true" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <com.ypyproductions.musicplayer.view.PagerSlidingTabStrip
+        android:id="@+id/pagertabstrip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tabs"
+        android:layout_below="@+id/my_awesome_toolbar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_child_listen"
+        android:layout_below="@+id/pagertabstrip" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/layout_child_listen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_child_listen_music"
+        android:layout_above="@+id/layout_ad"
+        android:background="@color/main_color"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_equalizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:background="@drawable/ic_equalizer_black_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp" />
+
+        <View
+            android:id="@+id/devider"
+            android:layout_width="1sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/btn_equalizer"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_small_track"
+            android:layout_width="@dimen/height_img_small_track"
+            android:layout_height="@dimen/height_img_small_track"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toRightOf="@+id/devider"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_default" />
+
+        <TextView
+            android:id="@+id/tv_small_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/btn_small_play"
+            android:layout_toRightOf="@+id/img_small_track"
+            android:maxLines="2"
+            android:text="AABBCBCBC ABBCBABC"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_body" />
+
+        <Button
+            android:id="@+id/btn_small_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_toLeftOf="@+id/btn_small_next"
+            android:background="@drawable/ic_play_arrow_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp" />
+
+        <Button
+            android:id="@+id/btn_small_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@+id/btn_small_close"
+            android:background="@drawable/ic_skip_next_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp" />
+
+        <Button
+            android:id="@+id/btn_small_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_close_white_36dp"
+            android:minHeight="1sp"
+            android:minWidth="1sp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_listen_music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_ad"
+        android:layout_below="@+id/my_awesome_toolbar"
+        layout="@layout/item_listen_music"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_ad"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_ads"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal" >
+    </RelativeLayout>
+
+</RelativeLayout>

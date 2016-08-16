@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidMyMusicPlayer.iml" filepath="$PROJECT_DIR$/AndroidMyMusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidMyMusicPlayer/androidMyMusicPlayer.iml" filepath="$PROJECT_DIR$/androidMyMusicPlayer/androidMyMusicPlayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialDialog/materialDialog.iml" filepath="$PROJECT_DIR$/materialDialog/materialDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nineOldLibrary/nineOldLibrary.iml" filepath="$PROJECT_DIR$/nineOldLibrary/nineOldLibrary.iml" />
+    </modules>
+  </component>
+</project>

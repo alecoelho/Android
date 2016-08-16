@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_tracks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1sp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/info_no_track"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_subhead"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/Users/Alessandro/Downloads/FullSource/SourceCode/AndroidStudio/AndroidMyMusicPlayer/androidMyMusicPlayer/src/main/res/layout/fragment_home.xml -->

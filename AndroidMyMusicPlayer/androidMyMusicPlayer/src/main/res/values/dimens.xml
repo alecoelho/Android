@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+        
+    <dimen name="widget_margin">8dp</dimen>
+   	<dimen name="widget_margin_top">4dp</dimen>
+     
+	<dimen name="menu_left_margin">72dp</dimen>
+    <dimen name="padding_top_dialog">22dp</dimen>
+    <dimen name="row_height_normal">64dp</dimen>
+    <dimen name="row_height_track">80dp</dimen>
+    <dimen name="row_height_medium">88dp</dimen>
+    
+    <dimen name="menu_intro">133dp</dimen>
+    <dimen name="dialog_margin">10sp</dimen>
+    <dimen name="small_margin">5sp</dimen>
+    <dimen name="top_margin">8sp</dimen>
+    <dimen name="devider">1dp</dimen>
+    
+    <dimen name="text_size_logo">30dp</dimen>
+    
+    <dimen name="height_ads">50sp</dimen>
+    <dimen name="height_img_small_track">50sp</dimen>
+    <dimen name="height_edit_text">48dp</dimen>
+    <dimen name="height_tabs">48dp</dimen>
+    <dimen name="height_indicator_tabs">4dp</dimen>
+    <dimen name="height_small_rating">20sp</dimen>
+    <dimen name="height_child_listen_music">70dp</dimen>
+    
+    <dimen name="img_item_inrow">40sp</dimen>
+    
+    <dimen name="text_margin_top">4sp</dimen>
+    <dimen name="shadow_height">4sp</dimen>
+    <dimen name="height_process_bar">30sp</dimen>
+    <dimen name="stroke_process">3sp</dimen>
+    <dimen name="height_pager">15sp</dimen>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="main_color">#00BFFF</color>
+    <color name="main_color_dark">#880E4F</color>
+    <color name="main_color_fallback">#F8BBD0</color>
+    
+    <color name="tab_indicator_color">#FFFF00</color>
+    <color name="main_color_tab">#B0E0E6</color>
+    
+    <color name="background_tab_pressed">#66AB47BC</color>
+    <color name="background_color_menu">#3b3b3b</color>
+    <color name="background_color_highlight">#494949</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    
+    <color name="grey">#dedede</color>
+    <color name="grey_background">#eeeeee</color>
+    
+    <color name="alpha_white">#90ffffff</color>
+    <color name="alpha_black">#90000000</color>
+    
+    <color name="blue_tab">#18FFFF</color>
+    
+    <color name="light_grey">#fafafa</color>
+    
+    <color name="black_deviders">#1f000000</color>
+    <color name="black_hint_text">#42000000</color>
+    <color name="black_secondary_text">#8A000000</color>
+    <color name="black_text">#de000000</color>
+
+</resources>

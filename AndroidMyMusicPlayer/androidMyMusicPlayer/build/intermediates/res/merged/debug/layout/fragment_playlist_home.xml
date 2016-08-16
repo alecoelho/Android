@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/header_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_playlist" />
+
+    <include
+        android:id="@+id/header_detail_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_detail_playlist"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_playlist"
+        android:layout_marginTop="1sp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1sp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/list_detail_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_detail_playlist"
+        android:layout_marginTop="1sp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="1sp"
+        android:scrollbars="none"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/Users/Alessandro/Downloads/FullSource/SourceCode/AndroidStudio/AndroidMyMusicPlayer/androidMyMusicPlayer/src/main/res/layout/fragment_playlist_home.xml -->

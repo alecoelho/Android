@@ -1,0 +1,8 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_shuffle_black_36dp_active" android:state_checked="true" android:state_pressed="false"/>
+    <item android:drawable="@drawable/ic_shuffle_black_36dp" android:state_checked="false" android:state_pressed="false"/>
+    <item android:drawable="@drawable/ic_shuffle_black_36dp_active" android:state_checked="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/ic_shuffle_black_36dp" android:state_checked="false" android:state_pressed="true"/>
+
+</selector><!-- From: file:/Users/Alessandro/Downloads/FullSource/SourceCode/AndroidStudio/AndroidMyMusicPlayer/androidMyMusicPlayer/src/main/res/drawable/cb_shuffle.xml -->
